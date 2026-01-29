@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-title {
+    font-size: 80px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+    text-decoration: underline;
+    animation: rainbow 10s infinite;
+    text-align: center;
+  }
+  @keyframes rainbow {
+    0% {
+      color: red;
+    }
+    16.67% {
+  color:#0056b3;
+    }
+    33.33% {
+   color:crimson;
+    }
+    50% {
+   color:gold;
+    }
+    66.67% {
+   color:darkorange;
+    }
+    83.33% {
+    color:darkorchid;
+    }
+    100% {
+   color:hotpink;
+    }
+ } 
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+  }
+  
+  .game-board {
+    margin-bottom: 10px;
+  }
+  
+  .status {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  
+  .square {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .square:hover {
+    background-color: #e7f1ff;
+    transform: scale(1.05);
+  }
+  
+  .winning {
+    background-color: #28a745; /* Green for winning squares */
+    color: white;
+  }
+  
+  .button {
+    margin-top: 10px;
+  }
+  
+  .reset-button {
+    background-color: #dc3545; /* Red for reset button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reset-button:hover {
+    background-color: #c82333;
+  }
+  
+  .game-info {
+    margin-top: 20px;
+  }
+  
+  .game-info ol {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
+  .game-info li {
+    margin: 5px 0;
+  }
+  
+  .game-info button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .game-info button:hover {
+    background-color: #0056b3;
+  }
+  .side-container {
+    position: absolute;
+    bottom:50px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 4px 20px rgba(237, 4, 27, 0.1);
+  }
+  
+  .side-container p {
+    font-size: 14px;
+    color: #666;
+  }
+  .made{
+    color:#007bff
+  }
+ 
